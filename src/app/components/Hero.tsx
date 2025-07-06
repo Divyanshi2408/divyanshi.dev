@@ -1,8 +1,6 @@
-// app/page.tsx (or src/pages/index.tsx if not using App Router)
-
 'use client'
 import Image from 'next/image';
-import { FiInstagram, FiTwitter} from 'react-icons/fi';
+import {FiInstagram, FiLinkedin, FiGithub} from 'react-icons/fi';
 
 export default function Home() {
   return (
@@ -10,8 +8,9 @@ export default function Home() {
       {/* Header */}
       <header className="flex justify-between items-center px-6 md:px-16 py-6 border-b border-gray-200">
         <div className="flex items-center gap-4">
+          <FiLinkedin className="text-xl cursor-pointer" />
+          <FiGithub className="text-xl cursor-pointer" />
           <FiInstagram className="text-xl cursor-pointer" />
-          <FiTwitter className="text-xl cursor-pointer" />
         </div>
         <h1 className="text-2xl font-signature">Divyanshi Pal</h1>
         <div className="flex items-center gap-4">
@@ -42,7 +41,7 @@ export default function Home() {
             src="/hero-art.jpg" // <-- Put your image inside public folder with this name
             alt="Divyanshi"
             width={460}
-            height={700}
+            height={400}
             className="w-full h-auto object-cover border-4 border-black"
           />
         </div>
@@ -51,7 +50,7 @@ export default function Home() {
         <div className="max-w-sm text-gray-500 text-center md:text-left">
           <div className="w-10 h-1 bg-red-400 mx-auto md:mx-0 mb-4"></div>
           <p>
-            Vitae feugiat proin ut ante rhoncus tortor varius faucibus suspendisse eget ipsum aenean non sapien nullam
+            I build clean, scalable web applications using the MERN stack, focusing on intuitive UI and real-world functionality.
           </p>
         </div>
       </section>
