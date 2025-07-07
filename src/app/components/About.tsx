@@ -1,6 +1,17 @@
-'use client'
+"use client"
 import { FiArrowRight } from 'react-icons/fi';
 import Image from 'next/image';
+
+const techStack = [
+  { name: 'React', icon: '/icons/react.svg' },
+  { name: 'Node.js', icon: '/icons/nodejs.svg' },
+  { name: 'MongoDB', icon: '/icons/mongodb.svg' },
+  { name: 'Next.js', icon: '/icons/nextjs.svg' },
+  { name: 'Tailwind CSS', icon: '/icons/tailwind.svg' },
+  { name: 'TypeScript', icon: '/icons/typescript.svg' },
+  { name: 'Django', icon: '/icons/django.svg' },
+  { name: 'MySQL', icon: '/icons/mysql.svg' },
+];
 
 export default function About() {
   return (
@@ -21,27 +32,50 @@ export default function About() {
           <p className="text-gray-400 text-sm mb-4">
             Constantly shaping ideas into scalable, maintainable digital solutions.
           </p>
-          <div className="grid grid-cols-4 gap-4">
-            {['React', 'Node.js', 'MongoDB', 'Next.js', 'Tailwind CSS', 'TypeScript', 'Django', 'MySQL'].map((tech, i) => (
-              <div key={i} className="bg-[#334155] rounded-lg p-2 text-center text-sm">
-                {tech}
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            {techStack.map((tech, i) => (
+              <div key={i} className="bg-[#334155] rounded-lg p-3 text-center text-sm flex flex-col items-center justify-center">
+                <Image
+                  src={tech.icon}
+                  alt={tech.name}
+                  width={32}
+                  height={32}
+                  className="mb-2"
+                />
+                <span>{tech.name}</span>
               </div>
             ))}
           </div>
         </div>
 
         {/* Experience Highlights */}
-        <div className="bg-[#1E293B] rounded-xl p-6">
-          <h2 className="text-xl font-semibold mb-4">Experience Highlights</h2>
-          <p className="text-gray-400 text-sm mb-6">
-            Numbers that define my professional journey
-          </p>
-          <div className="flex flex-col gap-4">
-            <div className="text-lg font-bold">4+ <span className="text-sm font-normal text-gray-400">Years of Experience</span></div>
-            <div className="text-lg font-bold">20+ <span className="text-sm font-normal text-gray-400">Projects Completed</span></div>
-            <div className="text-lg font-bold">100% <span className="text-sm font-normal text-gray-400">Client Satisfaction</span></div>
-          </div>
-        </div>
+       <div className="bg-[#1E293B] rounded-xl p-6">
+  <h2 className="text-xl font-semibold mb-4">Experience Highlights</h2>
+  <p className="text-gray-400 text-sm mb-6">
+    Numbers that define my professional journey
+  </p>
+<div className="flex justify-center">
+  <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 w-full max-w-5xl text-center">
+    <div className="bg-[#1E293B] rounded-xl p-6">
+      <p className="text-4xl font-bold text-[#38BDF8]">4+</p>
+      <p className="text-sm text-gray-400">Years of Experience</p>
+      <p className="text-xs text-gray-500">Building scalable applications</p>
+    </div>
+    <div className="bg-[#1E293B] rounded-xl p-6">
+      <p className="text-4xl font-bold text-[#38BDF8]">20+</p>
+      <p className="text-sm text-gray-400">Projects Completed</p>
+      <p className="text-xs text-gray-500">From concept to deployment</p>
+    </div>
+    <div className="bg-[#1E293B] rounded-xl p-6">
+      <p className="text-4xl font-bold text-[#38BDF8]">100%</p>
+      <p className="text-sm text-gray-400">Client Satisfaction</p>
+      <p className="text-xs text-gray-500">Written with passion</p>
+    </div>
+  </div>
+</div>
+
+</div>
+
 
         {/* Global Collaboration */}
         <div className="bg-[#1E293B] rounded-xl p-6 flex flex-col justify-between">
@@ -55,7 +89,7 @@ export default function About() {
             href="#contact"
             className="mt-6 inline-flex items-center gap-2 text-[#38BDF8] font-medium border border-[#38BDF8] rounded-lg px-4 py-2 hover:bg-[#38BDF8] hover:text-[#0F172A] transition"
           >
-            Let&#39;s Connect <FiArrowRight />
+            Let&apos;s Connect <FiArrowRight />
           </a>
         </div>
 
@@ -77,9 +111,9 @@ export default function About() {
             className="rounded-full object-cover"
           />
           <div>
-            <h3 className="text-lg font-semibold">Hi, I&#39;m Divyanshi Pal</h3>
+            <h3 className="text-lg font-semibold">Hi, I&apos;m Divyanshi Pal</h3>
             <p className="text-sm text-gray-400 mt-2">
-              I&#39;m a passionate full-stack developer with 2+ years of experience crafting responsive web applications. I specialize in React, Node.js, and intuitive UI/UX design. Let&#39;s bring ideas to life with clean code and exceptional digital experiences.
+              I&apos;m a passionate full-stack developer with 2+ years of experience crafting responsive web applications. I specialize in React, Node.js, and intuitive UI/UX design. Let&apos;s bring ideas to life with clean code and exceptional digital experiences.
             </p>
           </div>
         </div>
