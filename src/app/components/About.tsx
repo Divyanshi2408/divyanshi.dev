@@ -3,14 +3,14 @@ import { FiArrowRight } from 'react-icons/fi';
 import Image from 'next/image';
 
 const techStack = [
-  { name: 'React', icon: '/icons/react.svg' },
-  { name: 'Node.js', icon: '/icons/nodejs.svg' },
-  { name: 'MongoDB', icon: '/icons/mongodb.svg' },
-  { name: 'Next.js', icon: '/icons/nextjs.svg' },
-  { name: 'Tailwind CSS', icon: '/icons/tailwind.svg' },
-  { name: 'TypeScript', icon: '/icons/typescript.svg' },
-  { name: 'Django', icon: '/icons/django.svg' },
-  { name: 'MySQL', icon: '/icons/mysql.svg' },
+  { name: 'React', icon: '/react.png' },
+  { name: 'Node.js', icon: '/node.png' },
+  { name: 'MongoDB', icon: '/mdb.png' },
+  { name: 'Next.js', icon: '/next.png' },
+  { name: 'Tailwind CSS', icon: '/css.png' },
+  { name: 'TypeScript', icon: '/ts.png' },
+  { name: 'JavaScript', icon: '/js.png' },
+  { name: 'Git', icon: '/git.png' },
 ];
 
 export default function About() {
@@ -57,7 +57,7 @@ export default function About() {
 <div className="flex justify-center">
   <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 w-full max-w-5xl text-center">
     <div className="bg-[#1E293B] rounded-xl p-6">
-      <p className="text-4xl font-bold text-[#38BDF8]">4+</p>
+      <p className="text-4xl font-bold text-[#38BDF8]">2+</p>
       <p className="text-lg ">Years of Experience</p>
       <p className="text-sm text-gray-400">Building scalable applications</p>
     </div>
@@ -104,7 +104,7 @@ export default function About() {
         {/* Personal Introduction */}
         <div className="md:col-span-2 bg-[#1E293B] rounded-xl p-6 flex flex-col md:flex-row items-center gap-6 mt-4">
           <Image
-            src="/profile.jpg" // replace with your image in /public folder
+            src="/profile.png" // replace with your image in /public folder
             alt="Divyanshi Pal"
             width={80}
             height={80}
