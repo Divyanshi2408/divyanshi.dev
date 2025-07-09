@@ -115,12 +115,14 @@
 'use client';
 
 import Image from 'next/image';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { FaExternalLinkAlt } from 'react-icons/fa';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import { Mousewheel } from 'swiper/modules';
+import { Mousewheel, Navigation } from 'swiper/modules';
+import 'swiper/css/navigation';
 import 'swiper/css/mousewheel';
+import { Swiper as SwiperType } from 'swiper';
 
 const projects = [
   {
@@ -151,10 +153,20 @@ const projects = [
     image: "/projects/helpkitgenie.png",
     tags: ["React", "CSS", "LastFm.API"],
   },
+   {
+    title: "Recipe Finder Web App",
+    description:
+      "I created a Recipe Finder web application using React that provides users with a seamless experience to search and explore various recipes.",
+    image: "/projects/helpkitgenie.png",
+    tags: ["React", "CSS","React Hooks", "Speech Recognition API"],
+  },
 ];
 
 export default function Projects() {
   const [selectedProject, setSelectedProject] = useState(projects[0]);
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const swiperRef = useRef<SwiperType | null>(null);
 
   return (
     <section className="bg-[#0F172A] text-[#F1F5F9] px-6 md:px-20 py-16">
@@ -199,53 +211,72 @@ export default function Projects() {
           </div>
         </div>
 
-        {/* Slider for All Projects */}
+        {/* Project List (Swiper) */}
         <div>
           <h4 className="text-lg font-semibold mb-4 text-[#38BDF8]">All Projects</h4>
-<Swiper
-  direction="vertical"
-  slidesPerView={3}
-  spaceBetween={20}
-  mousewheel={true}
-  modules={[Mousewheel]}
-  className="h-[600px]"
->
-  {projects.map((project, index) => (
-    <SwiperSlide key={index} className="!h-[180px]">
-      <div
-        onClick={() => setSelectedProject(project)}
-        className={`cursor-pointer border rounded-xl overflow-hidden transition-transform hover:scale-105 h-full bg-[#1E293B] ${
-          selectedProject.title === project.title ? 'ring-2 ring-[#38BDF8]' : ''
-        }`}
-      >
-        <div className="flex h-full">
-          <Image
-            src={project.image}
-            alt={project.title}
-            width={160}
-            height={120}
-            className="object-cover w-[160px] h-full rounded-l-md"
-          />
-          <div className="p-3 flex flex-col justify-center text-left">
-            <h4 className="font-semibold text-base mb-1">{project.title}</h4>
-            <p className="text-xs text-gray-400 line-clamp-2">
-              {project.description}
-            </p>
+
+         <Swiper
+          direction="vertical"
+          slidesPerView={3}
+          spaceBetween={20}
+          mousewheel={true}
+          modules={[Mousewheel, Navigation]}
+          onSwiper={(swiper) => (swiperRef.current = swiper)}
+          onSlideChange={(swiper) => {
+            setActiveIndex(swiper.activeIndex);
+            setSelectedProject(projects[swiper.activeIndex]);
+          }}
+          className="h-[600px]"
+        >
+
+            {projects.map((project, index) => (
+              <SwiperSlide key={index} className="!h-[180px]">
+                <div
+                  onClick={() => setSelectedProject(project)}
+                  className={`cursor-pointer border rounded-xl overflow-hidden transition-transform hover:scale-105 h-full bg-[#1E293B] ${
+                    selectedProject.title === project.title ? 'ring-2 ring-[#38BDF8]' : ''
+                  }`}
+                >
+                  <div className="flex h-full">
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      width={160}
+                      height={120}
+                      className="object-cover w-[160px] h-full rounded-l-md"
+                    />
+                    <div className="p-3 flex flex-col justify-center text-left">
+                      <h4 className="font-semibold text-base mb-1">{project.title}</h4>
+                      <p className="text-xs text-gray-400 line-clamp-2">
+                        {project.description}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+
+          {/* Interactive Project Counter (with arrows) */}
+          <div className="text-center mt-6 text-[#F1F5F9]">
+            <span className="bg-[#1E293B] text-sm px-4 py-2 rounded-full inline-flex items-center gap-3">
+              <button
+                onClick={() => swiperRef.current?.slidePrev()}
+                className="text-[#38BDF8] font-bold hover:scale-110 transition"
+              >
+                ←
+              </button>
+             {activeIndex + 1} of {projects.length} Projects
+
+              <button
+                onClick={() => swiperRef.current?.slideNext()}
+                className="text-[#38BDF8] font-bold hover:scale-110 transition"
+              >
+                →
+              </button>
+            </span>
           </div>
         </div>
-      </div>
-    </SwiperSlide>
-  ))}
-</Swiper>
-
-
-        </div>
-      </div>
-
-      <div className="text-center mt-8">
-        <span className="bg-[#1E293B] text-sm px-4 py-2 rounded-full">
-          {projects.indexOf(selectedProject) + 1} of {projects.length} Projects
-        </span>
       </div>
     </section>
   );
