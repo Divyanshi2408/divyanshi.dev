@@ -27,9 +27,9 @@ export default function About() {
       {/* Grid Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Tech Stack */}
-        <div className="bg-[#1E293B] rounded-xl p-6">
-          <h2 className="text-xl font-semibold mb-4">Tech Stack</h2>
-          <p className="text-gray-400 text-sm mb-4">
+        <div className="bg-[#fad4da] rounded-xl p-6">
+          <h2 className="text-xl text-black font-semibold mb-4">Tech Stack</h2>
+          <p className="text-black text-sm mb-4">
             Constantly shaping ideas into scalable, maintainable digital solutions.
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
@@ -49,9 +49,9 @@ export default function About() {
         </div>
 
         {/* Experience Highlights */}
-       <div className="bg-[#1E293B] rounded-xl p-6">
-  <h2 className="text-xl font-semibold mb-4">Experience Highlights</h2>
-  <p className="text-gray-400 text-sm mb-6">
+       <div className="bg-[#fad4da] rounded-xl p-6">
+  <h2 className="text-xl text-black font-semibold mb-4">Experience Highlights</h2>
+  <p className="text-black text-sm mb-6">
     Numbers that define my professional journey
   </p>
 <div className="flex justify-center">
@@ -78,10 +78,10 @@ export default function About() {
 
 
         {/* Global Collaboration */}
-        <div className="bg-[#1E293B] rounded-xl p-6 flex flex-col justify-between">
+        <div className="bg-[#fad4da] rounded-xl p-6 flex flex-col justify-between">
           <div>
-            <h2 className="text-xl font-semibold mb-4">Global Collaboration</h2>
-            <p className="text-gray-400 text-sm">
+            <h2 className="text-xl text-black font-semibold mb-4">Global Collaboration</h2>
+            <p className="text-black text-sm">
               Based in India, I regularly collaborate with teams across several time zones and cultures to build better software.
             </p>
           </div>
@@ -94,9 +94,9 @@ export default function About() {
         </div>
 
         {/* Passion for Innovation */}
-        <div className="bg-[#1E293B] rounded-xl p-6">
-          <h2 className="text-xl font-semibold mb-4">Passion for Innovation</h2>
-          <p className="text-gray-400 text-sm">
+        <div className="bg-[#fad4da] rounded-xl p-6">
+          <h2 className="text-xl text-black font-semibold mb-4">Passion for Innovation</h2>
+          <p className="text-black text-sm">
             Creativity lights every problem. I believe in solving complex problems by simplifying logic, embracing feedback, and iterating into delightful digital results.
           </p>
         </div>
