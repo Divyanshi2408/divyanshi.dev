@@ -102,7 +102,7 @@ export default function About() {
         </div>
 
         {/* Personal Introduction */}
-        <div className="md:col-span-2 bg-[#1E293B] rounded-xl p-6 flex flex-col md:flex-row items-center gap-6 mt-4">
+        <div className="md:col-span-2 bg-[#fad4da] rounded-xl p-6 flex flex-col md:flex-row items-center gap-6 mt-4">
           <Image
             src="/profile.png" // replace with your image in /public folder
             alt="Divyanshi Pal"
@@ -111,8 +111,8 @@ export default function About() {
             className="rounded-full object-cover"
           />
           <div>
-            <h3 className="text-lg font-semibold">Hi, I&apos;m Divyanshi Pal</h3>
-            <p className="text-sm text-gray-400 mt-2">
+            <h3 className="text-lg text-black font-semibold">Hi, I&apos;m Divyanshi Pal</h3>
+            <p className="text-sm text-black mt-2">
               I&apos;m a passionate full-stack developer with 2+ years of experience crafting responsive web applications. I specialize in React, Node.js, and intuitive UI/UX design. Let&apos;s bring ideas to life with clean code and exceptional digital experiences.
             </p>
           </div>

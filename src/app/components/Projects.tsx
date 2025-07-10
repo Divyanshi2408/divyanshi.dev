@@ -62,7 +62,7 @@ export default function Projects() {
 
       <div className="flex flex-col lg:flex-row gap-10">
         {/* Left: Featured Project - 65% width */}
-        <div className="lg:w-[65%] w-full bg-[#1E293B] rounded-xl p-6 shadow-md">
+        <div className="lg:w-[65%] w-full bg-[#fad4da] rounded-xl p-6 shadow-md">
           <div className="relative">
             <Image
               src={selectedProject.image}
@@ -118,7 +118,7 @@ export default function Projects() {
                     setSelectedProject(project);
                     swiperRef.current?.slideTo(index);
                   }}
-                  className={`cursor-pointer border rounded-xl overflow-hidden transition-transform hover:scale-105 h-full bg-[#1E293B] ${
+                  className={`cursor-pointer border rounded-xl overflow-hidden transition-transform hover:scale-105 h-full bg-[#fad4da] ${
                     selectedProject.title === project.title ? 'ring-2 ring-[#38BDF8]' : ''
                   }`}
                 >
@@ -141,17 +141,17 @@ export default function Projects() {
 
           {/* Project Counter and Nav Buttons */}
           <div className="text-center mt-6 text-[#F1F5F9]">
-            <span className="bg-[#1E293B] text-sm px-4 py-2 rounded-full inline-flex items-center gap-3">
+            <span className="bg-[#fad4da] text-sm px-4 py-2 rounded-full inline-flex items-center gap-3">
               <button
                 onClick={() => swiperRef.current?.slidePrev()}
-                className="text-[#38BDF8] font-bold hover:scale-110 transition"
+                className="text-black font-bold hover:scale-110 transition"
               >
                 ←
               </button>
               {activeIndex + 1} of {projects.length} Projects
               <button
                 onClick={() => swiperRef.current?.slideNext()}
-                className="text-[#38BDF8] font-bold hover:scale-110 transition"
+                className="text-black font-bold hover:scale-110 transition"
               >
                 →
               </button>
