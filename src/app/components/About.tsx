@@ -18,7 +18,7 @@ export default function About() {
     <main className="min-h-screen bg-[#0F172A] text-white px-6 md:px-16 py-16">
       {/* Title */}
       <div className="text-center mb-16">
-        <h1 className="text-4xl font-bold mb-2">About Me</h1>
+        <h1 className="text-4xl text-[#fad4da] font-bold mb-2">About Me</h1>
         <p className="text-gray-400 max-w-xl mx-auto">
           Discover my journey, expertise, and passion for crafting exceptional digital experiences
         </p>
@@ -27,7 +27,7 @@ export default function About() {
       {/* Grid Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Tech Stack */}
-        <div className="bg-[#f9f5f7] rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
+        <div className="bg-[#fad4da] rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
           <h2 className="text-xl text-[#1E293B] font-semibold mb-4">Tech Stack</h2>
           <p className="text-[#334155] text-sm mb-4">
             Constantly shaping ideas into scalable, maintainable digital solutions.
@@ -52,7 +52,7 @@ export default function About() {
         </div>
 
         {/* Experience Highlights */}
-        <div className="bg-[#f9f5f7] rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
+        <div className="bg-[#fad4da] rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
           <h2 className="text-xl text-[#1E293B] font-semibold mb-4">Experience Highlights</h2>
           <p className="text-[#334155] text-sm mb-6">
             Numbers that define my professional journey
@@ -79,7 +79,7 @@ export default function About() {
         </div>
 
         {/* Global Collaboration */}
-        <div className="bg-[#f9f5f7] rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow flex flex-col justify-between">
+        <div className="bg-[#fad4da] rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow flex flex-col justify-between">
           <div>
             <h2 className="text-xl text-[#1E293B] font-semibold mb-4">Global Collaboration</h2>
             <p className="text-[#334155] text-sm">
@@ -88,14 +88,14 @@ export default function About() {
           </div>
           <a
             href="#contact"
-            className="mt-6 inline-flex items-center gap-2 text-[#14B8A6] font-medium border border-[#14B8A6] rounded-lg px-4 py-2 hover:bg-[#14B8A6] hover:text-[#0F172A] transition"
+            className="mt-6 inline-flex items-center gap-2 text-[#e55a6d] font-medium border border-[#e55a6d] rounded-lg px-4 py-2 hover:bg-[#e55a6d] hover:text-[#0F172A] transition"
           >
             Let&apos;s Connect <FiArrowRight />
           </a>
         </div>
 
         {/* Passion for Innovation */}
-        <div className="bg-[#f9f5f7] rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
+        <div className="bg-[#fad4da] rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
           <h2 className="text-xl text-[#1E293B] font-semibold mb-4">Passion for Innovation</h2>
           <p className="text-[#334155] text-sm">
             Creativity lights every problem. I believe in solving complex problems by simplifying logic, embracing feedback, and iterating into delightful digital results.
@@ -103,13 +103,13 @@ export default function About() {
         </div>
 
         {/* Personal Introduction */}
-        <div className="md:col-span-2 bg-[#f9f5f7] rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow flex flex-col md:flex-row items-center gap-6 mt-4">
+        <div className="md:col-span-2 bg-[#fad4da] rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow flex flex-col md:flex-row items-center gap-6 mt-4">
           <Image
             src="/profile.png"
             alt="Divyanshi Pal"
             width={80}
             height={80}
-            className="rounded-full object-cover"
+            className="rounded-full object-cover border border-[#e55a6d]"
           />
           <div>
             <h3 className="text-lg text-[#1E293B] font-semibold">Hi, I&apos;m Divyanshi Pal</h3>

@@ -107,10 +107,10 @@ export default function HeroCodeEditor() {
           building: <span className="text-[#FF6B81]">'ThreadSpire App'</span>,
         </p>
         <p className="ml-4">
-          availableFor: <span className="text-[#FF6B81]">'Remote Dev Roles'</span>,
+          availableFor: <span className="text-[#FF6B81]">'Dev Roles'</span>,
         </p>
         <p className="ml-4">
-          github: <span className="text-[#FF6B81]">'/divyanshipal'</span>,
+          github: <span className="text-[#FF6B81]">'/divyanshipal2408'</span>,
         </p>
         <p>{'}'}</p>
         <p className="text-[#F9B6C2] mt-3">// let’s build something impactful 🚀</p>

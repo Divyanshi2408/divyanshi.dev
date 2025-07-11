@@ -61,9 +61,9 @@ export default function ContactSection() {
 
             <button
               type="submit"
-              className="w-full py-2 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-md text-sm font-medium hover:opacity-90 transition"
+              className="w-full py-2 bg-[#FF6B81] rounded-md text-sm font-medium hover:opacity-90 transition"
             >
-              Send Message ⚠️
+              Send Message 
             </button>
           </form>
         </div>
