@@ -25,7 +25,7 @@ export default function ContactSection() {
         <div className="bg-[#fad4da] p-6 rounded-xl shadow-md">
           <h3 className="text-xl text-black font-semibold mb-4">Send a Message</h3>
           <p className="text-sm text-black mb-6">
-            Fill out the form below and I'll get back to you within 24 hours
+            Fill out the form below and I will get back to you within 24 hours
           </p>
 
           <form className="space-y-5 text-black" onSubmit={handleSubmit}>

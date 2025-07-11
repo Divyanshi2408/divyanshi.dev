@@ -96,24 +96,25 @@ export default function HeroCodeEditor() {
 
       {/* Updated mock code */}
       <div className="bg-[#0F172A] p-4 rounded-lg text-[#CBD5E1] text-sm font-mono leading-relaxed">
-        <p className="text-[#F9B6C2]">// work in progress...</p>
-        <p>
-          <span className="text-pink-400">const</span> status = {'{'}
-        </p>
-        <p className="ml-4">
-          learning: <span className="text-[#FF6B81]">'Next.js & TypeScript'</span>,
-        </p>
-        <p className="ml-4">
-          building: <span className="text-[#FF6B81]">'ThreadSpire App'</span>,
-        </p>
-        <p className="ml-4">
-          availableFor: <span className="text-[#FF6B81]">'Dev Roles'</span>,
-        </p>
-        <p className="ml-4">
-          github: <span className="text-[#FF6B81]">'/divyanshipal2408'</span>,
-        </p>
-        <p>{'}'}</p>
-        <p className="text-[#F9B6C2] mt-3">// lets build something impactful 🚀</p>
+        <p className="text-[#F9B6C2]">{"// work in progress..."}</p>
+<p>
+  <span className="text-pink-400">const</span> status = {'{'}
+</p>
+<p className="ml-4">
+  learning: <span className="text-[#FF6B81]">&apos;Next.js & TypeScript&apos;</span>,
+</p>
+<p className="ml-4">
+  building: <span className="text-[#FF6B81]">&apos;ThreadSpire App&apos;</span>,
+</p>
+<p className="ml-4">
+  availableFor: <span className="text-[#FF6B81]">&apos;Remote Dev Roles&apos;</span>,
+</p>
+<p className="ml-4">
+  github: <span className="text-[#FF6B81]">&apos;/divyanshipal&apos;</span>,
+</p>
+<p>{'}'}</p>
+<p className="text-[#F9B6C2] mt-3">{"// let’s build something impactful 🚀"}</p>
+
       </div>
     </div>
   );
