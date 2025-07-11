@@ -14,36 +14,36 @@ const projects = [
   {
     title: "Learning Management System (LMS)",
     description:
-      "A MERN stack-based LMS platform where users can enroll in courses, track progress, and access learning materials. Course Listing, Enrollment, Admin Dashboard, Payment Integration.",
+      "A MERN stack-based LMS platform where users can enroll in courses, track progress, and access learning materials. Course Listing, Enrollment, Admin Dashboard, Payment Integration.Course Listing: Browse and filter courses by category or level. Enrollment & Progress Tracking: Users can enroll, mark lessons as complete, and track their learning journey. Admin Dashboard: Manage courses, users, and analytics. Payment Integration: (Optional) Free or integrated payment feature to purchase courses.",
     image: "/lms.png",
     tags: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
   },
   {
     title: "ThreadSpire – Community Wisdom Threads",
     description:
-      "A MERN-based community platform where users create, remix, and organize long-form wisdom threads.",
+      "A MERN-based community platform where users create, remix, and organize long-form wisdom threads.Create & Organize Threads: Users can write, edit, and group related threads. Social Features: Bookmark, react, remix threads. Follow users and view trending content. Analytics: Thread engagement and activity stats. Collections: Organize threads into custom collections.",
     image: "/tsp.jpg",
     tags: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
   },
   {
     title: "Real Estate Web App",
     description:
-      "A full-stack MERN Real Estate application for property listings, user authentication, and real-time search.",
+      "A full-stack MERN Real Estate application for property listings, user authentication, and real-time search.Property Listings: Users can explore properties for sale or rent. Search Filters: Narrow down listings by location, price, and property type. Authentication: Login/signup feature with JWT. Dashboard: Users can post, edit, and delete their own property listings.",
     image: "/re.png",
     tags: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
   },
   {
     title: "Music Player Web App",
     description:
-      "A dynamic and interactive music player built with React and Last.fm API integration.",
-    image: "/projects/helpkitgenie.png",
+      "A dynamic and interactive music player built with React and Last.fm API integration.Trending Songs: Displays the latest and most popular songs based on real-time data or pre-defined lists. New Releases: A section dedicated to the newest music tracks, keeping users up-to-date with fresh content. Weekly Top Songs: Showcases the most-played or highest-rated songs of the week. Popular Artists: Allows users to explore top artists and access their music collections.",
+    image: "/mp.png",
     tags: ["React", "CSS", "LastFm.API"],
   },
   {
     title: "Recipe Finder Web App",
     description:
-      "A voice-enabled recipe finder using Speech Recognition API to browse recipes interactively.",
-    image: "/projects/helpkitgenie.png",
+      "A voice-enabled recipe finder using Speech Recognition API to browse recipes interactively.Search by Category: Users can search for dishes categorized by cuisine, meal type, and other filters for better results. Text Search: A simple and efficient text-based search option to find recipes quickly. Voice Search: Integrated a voice search feature that allows users to find recipes using voice commands for enhanced accessibility and convenience. Responsive Design: Optimized for both desktop and mobile devices, ensuring easy navigation on any screen size.",
+    image: "/rp.png",
     tags: ["React", "CSS", "React Hooks", "Speech Recognition API"],
   },
 ];
