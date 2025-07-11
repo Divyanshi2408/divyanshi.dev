@@ -11,12 +11,12 @@ import 'swiper/css/mousewheel';
 import { Swiper as SwiperType } from 'swiper';
 
 const projects = [
-  {
-    title: "Learning Management System (LMS)",
+   {
+    title: "Music Player Web App",
     description:
-      "A MERN stack-based LMS platform where users can enroll in courses, track progress, and access learning materials. Course Listing, Enrollment, Admin Dashboard, Payment Integration.Course Listing: Browse and filter courses by category or level. Enrollment & Progress Tracking: Users can enroll, mark lessons as complete, and track their learning journey. Admin Dashboard: Manage courses, users, and analytics. Payment Integration: (Optional) Free or integrated payment feature to purchase courses.",
-    image: "/lms.png",
-    tags: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
+      "A dynamic and interactive music player built with React and Last.fm API integration.Trending Songs: Displays the latest and most popular songs based on real-time data or pre-defined lists. New Releases: A section dedicated to the newest music tracks, keeping users up-to-date with fresh content. Weekly Top Songs: Showcases the most-played or highest-rated songs of the week. Popular Artists: Allows users to explore top artists and access their music collections.",
+    image: "/mp.png",
+    tags: ["React", "CSS", "LastFm.API"],
   },
   {
     title: "ThreadSpire – Community Wisdom Threads",
@@ -32,12 +32,12 @@ const projects = [
     image: "/re.png",
     tags: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
   },
-  {
-    title: "Music Player Web App",
+   {
+    title: "Learning Management System (LMS)",
     description:
-      "A dynamic and interactive music player built with React and Last.fm API integration.Trending Songs: Displays the latest and most popular songs based on real-time data or pre-defined lists. New Releases: A section dedicated to the newest music tracks, keeping users up-to-date with fresh content. Weekly Top Songs: Showcases the most-played or highest-rated songs of the week. Popular Artists: Allows users to explore top artists and access their music collections.",
-    image: "/mp.png",
-    tags: ["React", "CSS", "LastFm.API"],
+      "A MERN stack-based LMS platform where users can enroll in courses, track progress, and access learning materials. Course Listing, Enrollment, Admin Dashboard, Payment Integration.Course Listing: Browse and filter courses by category or level. Enrollment & Progress Tracking: Users can enroll, mark lessons as complete, and track their learning journey. Admin Dashboard: Manage courses, users, and analytics. Payment Integration: (Optional) Free or integrated payment feature to purchase courses.",
+    image: "/lms.png",
+    tags: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
   },
   {
     title: "Recipe Finder Web App",

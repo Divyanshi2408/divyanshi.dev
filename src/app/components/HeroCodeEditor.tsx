@@ -113,7 +113,7 @@ export default function HeroCodeEditor() {
           github: <span className="text-[#FF6B81]">'/divyanshipal2408'</span>,
         </p>
         <p>{'}'}</p>
-        <p className="text-[#F9B6C2] mt-3">// let’s build something impactful 🚀</p>
+        <p className="text-[#F9B6C2] mt-3">// lets build something impactful 🚀</p>
       </div>
     </div>
   );

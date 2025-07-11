@@ -13,9 +13,9 @@ export default function ContactSection() {
   return (
     <section className="bg-[#0F172A] text-white px-6 py-16 md:px-20">
       <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold mb-2">Let's Connect</h2>
+        <h2 className="text-4xl font-bold mb-2">Lets Connect</h2>
         <p className="text-gray-400">
-          Ready to bring your ideas to life? Let’s discuss how we can work together to
+          Ready to bring your ideas to life? Lets discuss how we can work together to
           create something amazing.
         </p>
       </div>
@@ -106,8 +106,8 @@ export default function ContactSection() {
               <p className="text-sm text-black font-semibold">Available for Projects</p>
             </div>
             <p className="text-sm text-black">
-              I’m currently accepting new freelance projects and collaboration opportunities.
-              Let’s create something extraordinary together!
+              I am currently accepting new freelance projects and collaboration opportunities.
+              Lets create something extraordinary together!
             </p>
           </div>
         </div>
