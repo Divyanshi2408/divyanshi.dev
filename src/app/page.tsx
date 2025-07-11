@@ -12,6 +12,7 @@ export default function Home() {
         <About/>
         <Projects/>
         <ContactSection />
+    
       </section>
 </main>
   );
