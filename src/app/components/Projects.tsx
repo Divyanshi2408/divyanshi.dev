@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { useEffect, useRef, useState } from 'react';
+import {useRef, useState } from 'react';
 import { FaExternalLinkAlt } from 'react-icons/fa';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -52,7 +52,7 @@ export default function Projects() {
   const [activeIndex, setActiveIndex] = useState(0);
   const swiperRef = useRef<SwiperType | null>(null);
 
-  const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
+  // const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
 
   return (
     <section className="bg-[#0F172A] text-[#F1F5F9] px-4 md:px-20 py-16">
@@ -88,7 +88,7 @@ export default function Projects() {
             {selectedProject.tags.map((tag, index) => (
               <span
                 key={index}
-                className="bg-[#FF6B81] text-[#1E293B] px-4 py-1 rounded-full text-xs font-medium"
+                className="bg-[#334155] text-[#FFF] px-5 py-2 py-1 rounded-full text-xs font-medium"
               >
                 {tag}
               </span>
@@ -174,7 +174,7 @@ export default function Projects() {
 
             {/* Manual Buttons */}
             <div className="text-center mt-6 text-[#1E293B]">
-              <span className="bg-[#fad4da] text-sm px-4 py-2 rounded-full inline-flex items-center gap-3">
+              <span className="bg-[#FF6B81] hover:bg-[#e55a6d] text-white font-semibold tracking-wide rounded shadow-md shadow-[#ff6b8170] text-sm px-4 py-2 rounded-full inline-flex items-center gap-3">
                 <button
                   onClick={() => {
                     const prev = Math.max(activeIndex - 1, 0);
@@ -182,7 +182,7 @@ export default function Projects() {
                     setSelectedProject(projects[prev]);
                     setActiveIndex(prev);
                   }}
-                  className="text-black font-bold hover:scale-110 transition focus:outline-none"
+                  className="font-bold hover:scale-110 transition focus:outline-none"
                 >
                   ←
                 </button>
@@ -194,7 +194,7 @@ export default function Projects() {
                     setSelectedProject(projects[next]);
                     setActiveIndex(next);
                   }}
-                  className="text-black font-bold hover:scale-110 transition focus:outline-none"
+                  className="font-bold hover:scale-110 transition focus:outline-none"
                 >
                   →
                 </button>

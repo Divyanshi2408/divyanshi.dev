@@ -59,17 +59,18 @@ export default function About() {
           </p>
           <div className="flex justify-center">
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 w-full max-w-5xl text-center">
-              <div className="bg-[#1E293B] rounded-xl p-6">
+              <div className="bg-[#334155] rounded-xl p-6">
                 <p className="text-4xl font-bold text-[#FF6B81]">2+</p>
                 <p className="text-lg">Years of Experience</p>
                 <p className="text-sm text-gray-400">Building scalable applications</p>
               </div>
-              <div className="bg-[#1E293B] rounded-xl p-6">
+              <div className="bg-[#334155] rounded-xl p-6">
                 <p className="text-4xl font-bold text-[#FF6B81]">20+</p>
                 <p className="text-lg">Projects Completed</p>
                 <p className="text-sm text-gray-400">From concept to deployment</p>
               </div>
-              <div className="bg-[#1E293B] rounded-xl p-6">
+              {/* <div className="bg-[#1E293B] rounded-xl p-6"> */}
+              <div className="bg-[#334155] rounded-xl p-6">
                 <p className="text-4xl font-bold text-[#FF6B81]">100%</p>
                 <p className="text-lg">Client Satisfaction</p>
                 <p className="text-sm text-gray-400">Written with passion</p>

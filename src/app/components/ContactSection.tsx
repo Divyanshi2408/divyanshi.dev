@@ -61,7 +61,7 @@ export default function ContactSection() {
 
             <button
               type="submit"
-              className="w-full py-2 bg-[#FF6B81] rounded-md text-sm font-medium hover:opacity-90 transition"
+              className="w-full py-2 bg-[#FF6B81] hover:bg-[#e55a6d] text-white font-semibold tracking-wide rounded shadow-md shadow-[#ff6b8170] rounded-md text-sm font-medium hover:opacity-90 transition"
             >
               Send Message 
             </button>
