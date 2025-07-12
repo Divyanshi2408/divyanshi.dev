@@ -55,7 +55,7 @@ export default function Projects() {
   // const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
 
   return (
-    <section className="bg-[#0F172A] text-[#F1F5F9] px-4 md:px-20 py-16">
+    <section className="bg-[#0F172A] text-[#fad4da] px-4 md:px-20 py-16">
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-2">Featured Projects</h2>
       <p className="text-center text-gray-400 mb-10 text-sm md:text-base">
         Explore my latest work and creative solutions
@@ -152,7 +152,7 @@ export default function Projects() {
                       setActiveIndex(index);
                       swiperRef.current?.slideTo(index);
                     }}
-                    className={`cursor-pointer border rounded-xl overflow-hidden transition-transform hover:scale-105 h-full bg-[#fad4da] ${
+                    className={`cursor-pointer border rounded-xl overflow-hidden transition-transform hover:scale-105 h-full bg-[#FF6B81] ${
                       selectedProject.title === project.title ? 'ring-2 ring-[#38BDF8]' : ''
                     }`}
                   >

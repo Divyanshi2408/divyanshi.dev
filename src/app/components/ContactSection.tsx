@@ -11,7 +11,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section className="bg-[#0F172A] text-white px-6 py-16 md:px-20">
+    <section className="bg-[#0F172A] text-[#fad4da] px-6 py-16 md:px-20">
       <div className="text-center mb-12">
         <h2 className="text-4xl font-bold mb-2">Lets Connect</h2>
         <p className="text-gray-400">
@@ -74,11 +74,11 @@ export default function ContactSection() {
           <div className="bg-[#fad4da] p-6 rounded-xl shadow-md space-y-4">
             <h3 className="text-lg text-black font-semibold">Contact Information</h3>
             <div className="flex items-center gap-3 text-sm">
-              <MdEmail className="text-purple-400" />
+              <MdEmail className="text-[#FF6B81]" />
               <span className="text-black">Divyanshipal2808@gmail.com</span>
             </div>
             <div className="flex items-center gap-3 text-sm">
-              <MdLocationOn className="text-purple-400" />
+              <MdLocationOn className="text-[#FF6B81]" />
               <span className="text-black">Uttar Pradesh, India</span>
             </div>
           </div>
@@ -87,13 +87,13 @@ export default function ContactSection() {
           <div className="bg-[#fad4da] p-6 rounded-xl shadow-md">
             <h3 className="text-lg text-black font-semibold mb-4">Follow Me</h3>
             <div className="flex flex-col gap-3 text-black">
-              <a href="#" className="flex items-center gap-3 hover:text-purple-400 text-sm">
+              <a href="#" className="flex items-center gap-3 hover:text-[#FF6B81] text-sm">
                 <FaGithub /> GitHub
               </a>
-              <a href="#" className="flex items-center gap-3 hover:text-purple-400 text-sm">
+              <a href="#" className="flex items-center gap-3 hover:text-[#FF6B81] text-sm">
                 <FaTwitter /> X (Twitter)
               </a>
-              <a href="#" className="flex items-center gap-3 hover:text-purple-400 text-sm">
+              <a href="#" className="flex items-center gap-3 hover:text-[#FF6B81] text-sm">
                 <FaLinkedin /> LinkedIn
               </a>
             </div>

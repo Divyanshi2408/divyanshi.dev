@@ -690,7 +690,7 @@ export default function Home() {
         </div>
         <h1
           className="text-2xl font-bold"
-          style={{ fontFamily: "'Great Vibes', cursive", color: '#F9B6C2' }}
+          style={{ fontFamily: "'Great Vibes', cursive", color: '#fad4da' }}
         >
           Divyanshi Pal
         </h1>
@@ -715,7 +715,7 @@ export default function Home() {
 
   {/* Left Text */}
   <div ref={leftTextRef} className="text-center lg:text-left">
-    <h2 className="text-4xl md:text-6xl font-bold leading-tight mb-3 text-[#F9B6C2]">
+    <h2 className="text-4xl md:text-6xl font-bold leading-tight mb-3 text-[#fad4da]">
       Divyanshi<br /> Pal
     </h2>
     <p className="text-sm md:text-base text-[#F9B6C2] mb-2 tracking-wide">
