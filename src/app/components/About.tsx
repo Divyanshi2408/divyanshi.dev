@@ -148,23 +148,24 @@ const techStack = [
 export default function About() {
   const sectionRef = useRef(null);
 
-  useEffect(() => {
-    const cards = gsap.utils.toArray(".about-card");
+ useEffect(() => {
+  const cards = gsap.utils.toArray(".about-card") as HTMLElement[];
 
-    cards.forEach((card: any, i: number) => {
-      gsap.from(card, {
-        opacity: 0,
-        y: 40,
-        duration: 0.6,
-        delay: i * 0.15,
-        scrollTrigger: {
-          trigger: card,
-          start: "top 85%",
-          toggleActions: "play none none none",
-        },
-      });
+  cards.forEach((card, i) => {
+    gsap.from(card, {
+      opacity: 0,
+      y: 40,
+      duration: 0.6,
+      delay: i * 0.15,
+      scrollTrigger: {
+        trigger: card,
+        start: "top 85%",
+        toggleActions: "play none none none",
+      },
     });
-  }, []);
+  });
+}, []);
+
 
   return (
     <main
