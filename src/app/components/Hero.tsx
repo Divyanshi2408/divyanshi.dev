@@ -742,7 +742,7 @@ export default function Home() {
       href="#contact"
       className="inline-block mt-6 px-6 py-2 bg-[#FF6B81] hover:bg-[#e55a6d] text-white font-semibold tracking-wide rounded shadow-md shadow-[#ff6b8170] transition"
     >
-      Let’s Talk →
+      Let&apos;s Talk →
     </a>
   </div>
 </section>
