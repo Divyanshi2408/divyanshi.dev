@@ -45,7 +45,7 @@ export default function About() {
    
       <section id="about" 
       ref={sectionRef}
-      className="bg-[#0F172A] text-white px-6 md:px-16 py-16">
+      className="bg-[#0F172A] text-white px-6 md:px-16 pt-10 md:pt-14 pb-16">
       {/* Title */}
       <div className="text-center mb-16 about-card">
         <h1 className="text-4xl text-[#fad4da] font-bold mb-2">About Me</h1>
