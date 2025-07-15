@@ -42,10 +42,10 @@ export default function About() {
 
 
   return (
-    <main
+   
+      <section id="about" 
       ref={sectionRef}
-      className="min-h-screen bg-[#0F172A] text-white px-6 md:px-16 py-16"
-    >
+      className="bg-[#0F172A] text-white px-6 md:px-16 py-16">
       {/* Title */}
       <div className="text-center mb-16 about-card">
         <h1 className="text-4xl text-[#fad4da] font-bold mb-2">About Me</h1>
@@ -81,14 +81,15 @@ export default function About() {
           <p className="text-[#334155] text-sm mb-6">
             Numbers that define my professional journey
           </p>
-          <div className="flex justify-center">
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 w-full max-w-5xl text-center">
+        <div className="flex justify-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-4xl text-center">
+
               {[
                 { value: "2+", label: "Years of Experience", sub: "Building scalable applications" },
                 { value: "20+", label: "Projects Completed", sub: "From concept to deployment" },
                 { value: "100%", label: "Client Satisfaction", sub: "Written with passion" },
               ].map((stat, i) => (
-                <div key={i} className="bg-[#334155] rounded-xl p-6">
+                <div key={i} className="bg-[#334155] rounded-xl p-4 sm:p-6 break-words">
                   <p className="text-4xl font-bold text-[#FF6B81]">{stat.value}</p>
                   <p className="text-lg">{stat.label}</p>
                   <p className="text-sm text-gray-400">{stat.sub}</p>
@@ -139,6 +140,6 @@ export default function About() {
           </div>
         </div>
       </div>
-    </main>
+   </section>
   );
 }

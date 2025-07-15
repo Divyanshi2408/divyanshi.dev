@@ -187,7 +187,8 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="min-h-screen bg-[#0F172A] text-[#F1F5F9] relative overflow-hidden">
+    <main className="min-h-[90vh] bg-[#0F172A] text-[#F1F5F9] relative overflow-hidden">
+
 
       {/* Header */}
       <header className="hidden lg:flex justify-between items-center px-6 md:px-16 py-6 border-b border-[#1E293B] bg-[#0F172A] shadow-sm">
@@ -251,7 +252,8 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="grid grid-cols-1 lg:grid-cols-3 gap-10 items-center px-6 md:px-20 py-24 bg-[#0F172A]">
+      <section className="grid grid-cols-1 lg:grid-cols-3 gap-10 items-center px-6 md:px-20 py-16 md:py-24 bg-[#0F172A]">
+
 
         {/* Left Text */}
         <div ref={leftTextRef} className="text-center lg:text-left">
@@ -290,7 +292,7 @@ export default function Home() {
       {/* Scroll Down Indicator */}
       <div
         ref={scrollRef}
-        className="mt-10 animate-bounce text-[#FF6B81] text-center text-xl"
+        className="mt-6 animate-bounce text-[#FF6B81] text-center text-xl"
       >
         ↓ Scroll Down
       </div>
