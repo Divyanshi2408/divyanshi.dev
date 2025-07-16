@@ -234,6 +234,11 @@ export default function Home() {
               {label}
             </a>
           ))}
+          <div className="flex items-center gap-4 text-[#AAB1C2]">
+           <FiLinkedin className="text-xl cursor-pointer hover:text-[#FF6B81] transition duration-300" />
+         <FiGithub className="text-xl cursor-pointer hover:text-[#FF6B81] transition duration-300" />
+          <FiInstagram className="text-xl cursor-pointer hover:text-[#FF6B81] transition duration-300" />
+         </div>
         </div>
       )}
 
@@ -251,7 +256,8 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="grid grid-cols-1 lg:grid-cols-3 gap-10 items-center px-6 md:px-20 py-12 md:py-16 bg-[#0F172A]">
+    <section className="grid grid-cols-1 lg:grid-cols-3 gap-10 items-center px-6 md:px-20 py-6 md:py-16 bg-[#0F172A]">
+
 
         {/* Left Text */}
         <div ref={leftTextRef} className="text-center lg:text-left">
@@ -289,9 +295,10 @@ export default function Home() {
 
       {/* Scroll Down Indicator */}
       <div
-        ref={scrollRef}
-        className="mt-10 animate-bounce text-[#FF6B81] text-center text-xl"
-      >
+  ref={scrollRef}
+  className="mt-4 md:mt-10 animate-bounce text-[#FF6B81] text-center text-xl"
+>
+
         ↓ Scroll Down
       </div>
     </main>
