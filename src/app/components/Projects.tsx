@@ -235,32 +235,37 @@ export default function Projects() {
             </Swiper>
 
             {/* Navigation Controls */}
+            
             <div className="text-center mt-6 text-[#1E293B]">
-              <span className="bg-[#FF6B81] hover:bg-[#e55a6d] text-white font-semibold tracking-wide rounded shadow-md shadow-[#ff6b8170] text-sm px-4 py-2 rounded-full inline-flex items-center gap-3">
-                <button
+
+                 <button
                   onClick={() => {
                     const prev = Math.max(activeIndex - 1, 0);
                     swiperRef.current?.slideTo(prev);
                     setSelectedProject(projects[prev]);
                     setActiveIndex(prev);
                   }}
-                  className="font-bold hover:scale-110 transition focus:outline-none"
+                  className="m-2 px-2 font-bold hover:scale-110 transition focus:outline-none text-[#FF6B81] bg-[#FF6B81] hover:bg-[#e55a6d] text-white font-semibold rounded-full shadow-md shadow-[#ff6b8170]"
                 >
                   ←
                 </button>
+              
+              <span className="bg-[#FF6B81] hover:bg-[#e55a6d] text-white font-semibold  rounded shadow-md shadow-[#ff6b8170] text-sm px-4 py-2 rounded-full inline-flex items-center gap-3">
+             
                 {activeIndex + 1} of {projects.length} Projects
-                <button
+                
+              </span>
+              <button
                   onClick={() => {
                     const next = Math.min(activeIndex + 1, projects.length - 1);
                     swiperRef.current?.slideTo(next);
                     setSelectedProject(projects[next]);
                     setActiveIndex(next);
                   }}
-                  className="font-bold hover:scale-110 transition focus:outline-none"
+                  className="m-2 px-2 font-bold hover:scale-110 transition focus:outline-none text-[#FF6B81] bg-[#FF6B81] hover:bg-[#e55a6d] text-white font-semibold rounded-full shadow-md shadow-[#ff6b8170]"
                 >
                   →
                 </button>
-              </span>
             </div>
           </div>
         </div>

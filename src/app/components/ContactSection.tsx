@@ -136,13 +136,13 @@ export default function ContactSection() {
           <div className="bg-[#fad4da] p-6 rounded-xl shadow-md">
             <h3 className="text-lg text-black font-semibold mb-4">Follow Me</h3>
             <div className="flex flex-col gap-3 text-black">
-              <a href="#" className="flex items-center gap-3 hover:text-[#FF6B81] text-sm">
+              <a href="https://github.com/Divyanshi2408" className="flex items-center gap-3 hover:text-[#FF6B81] text-sm">
                 <FaGithub /> GitHub
               </a>
               <a href="#" className="flex items-center gap-3 hover:text-[#FF6B81] text-sm">
                 <FaTwitter /> X (Twitter)
               </a>
-              <a href="#" className="flex items-center gap-3 hover:text-[#FF6B81] text-sm">
+              <a href="https://www.linkedin.com/in/divyanshi-pal/" className="flex items-center gap-3 hover:text-[#FF6B81] text-sm">
                 <FaLinkedin /> LinkedIn
               </a>
             </div>

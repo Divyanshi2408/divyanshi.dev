@@ -199,9 +199,9 @@ export default function Home() {
 
       {/* Scroll Down Indicator */}
       <div
-  ref={scrollRef}
-  className="mt-4 md:mt-10 animate-bounce text-[#FF6B81] text-center text-xl"
->
+        ref={scrollRef}
+        className="mt-4 md:mt-10 animate-bounce text-[#FF6B81] text-center text-xl"
+      >
 
         ↓ Scroll Down
       </div>
