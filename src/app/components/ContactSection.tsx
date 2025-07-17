@@ -58,7 +58,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section
+    <section id="contact"
       className="bg-[#0F172A] text-[#fad4da] px-6 py-16 md:px-20 overflow-x-hidden"
     >
       <div className="text-center mb-12">

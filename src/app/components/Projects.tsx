@@ -105,7 +105,7 @@ export default function Projects() {
 
   return (
     <section
-      
+      id="project"
       className="bg-[#0F172A] text-[#fad4da] px-4 md:px-20 py-16 overflow-x-hidden"
     >
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-2">Featured Projects</h2>

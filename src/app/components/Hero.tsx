@@ -53,7 +53,9 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="min-h-screen bg-[#0F172A] text-[#F1F5F9] relative overflow-hidden">
+<main className="bg-[#0F172A] text-[#F1F5F9] relative overflow-hidden">
+
+
 
       {/* Header */}
       <header className="hidden lg:flex justify-between items-center px-6 md:px-16 py-6 border-b border-[#1E293B] bg-[#0F172A] shadow-sm">
@@ -146,21 +148,20 @@ export default function Home() {
       )}
 
       {/* Desktop Navigation */}
-      <nav className="hidden lg:flex justify-center gap-6 md:gap-10 py-4 font-semibold text-sm md:text-base text-[#AAB1C2] tracking-wide border-b border-[#1E293B]">
-        {['HOME', 'ABOUT', 'PROJECT', 'EXPERIENCE', 'CONTACT'].map((label) => (
-          <a
-            key={label}
-            href="#"
-            className="hover:text-[#FF6B81] transition-colors duration-300"
-          >
-            {label}
-          </a>
-        ))}
-      </nav>
+    <nav className="hidden lg:flex justify-center gap-6 md:gap-10 py-4 font-semibold text-sm md:text-base text-[#AAB1C2] tracking-wide border-b border-[#1E293B]">
+      {['HOME', 'ABOUT', 'PROJECT', 'EXPERIENCE', 'CONTACT'].map((label) => (
+        <a
+          key={label}
+          href={`#${label.toLowerCase()}`}
+          className="hover:text-[#FF6B81] transition-colors duration-300"
+        >
+          {label}
+        </a>
+      ))}
+    </nav>
 
       {/* Hero Section */}
-    <section className="grid grid-cols-1 lg:grid-cols-3 gap-10 items-center px-6 md:px-20 py-6 md:py-16 bg-[#0F172A]">
-
+       <section id='home' className="grid grid-cols-1 lg:grid-cols-3 gap-10 items-center px-6 md:px-20 py-4 md:py-12 bg-[#0F172A]">
 
         {/* Left Text */}
         <div ref={leftTextRef} className="text-center lg:text-left">
