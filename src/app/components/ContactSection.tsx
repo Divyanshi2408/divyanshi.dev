@@ -224,11 +224,14 @@ export default function ContactSection() {
 
     if (!formRef.current) return;
 
-    emailjs
-      .sendForm(
+  console.log("SERVICE ID", process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID);
+console.log("TEMPLATE ID", process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID);
+console.log("PUBLIC KEY", process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY);
+
+      emailjs.sendForm(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
-        formRef.current,
+        formRef.current!,
         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
       )
       .then(() => {
