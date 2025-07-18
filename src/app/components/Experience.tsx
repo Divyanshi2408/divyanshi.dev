@@ -34,15 +34,16 @@ export default function Experience() {
       role: "Application Developer",
       company: "Ninepages Techsolutions",
       date: "Sep 2024 – Present",
-      desc: "Built and deployed MERN stack applications with intuitive UIs, integrated REST APIs, and developed reusable React components.",
+      desc: "Developing and deploying scalable MERN stack applications with user-friendly interfaces. Implementing RESTful APIs, building reusable and optimized React components, and enhancing performance and maintainability across projects.",
     },
     {
       role: "SDE Trainee",
       company: "DRDO (ADRDE)",
       date: "Jun 2023 – Aug 2023",
-      desc: "Assisted in developing responsive React interfaces, worked with Redux for state management, and enhanced user experience across modules.",
+      desc: "Contributed to full-stack development of internal web applications. Implemented secure APIs using Node.js and Express, developed dynamic interfaces with React, and handled MongoDB-based data operations and system documentation.",
     },
   ];
+
 
   return (
     <section id="experience" className="bg-[#0F172A] py-12 px-6 pt-10 md:px-20 text-[#F1F5F9]">

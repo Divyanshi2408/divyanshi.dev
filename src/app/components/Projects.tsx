@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
-import { FaExternalLinkAlt } from 'react-icons/fa';
+import { FaGithub} from 'react-icons/fa';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -117,7 +117,7 @@ export default function Projects() {
         {/* Featured Project Card */}
         <div
           ref={cardRef}
-          className="lg:w-[65%] w-full bg-[#fad4da] rounded-2xl p-6 sm:p-8 shadow-lg flex flex-col justify-between max-w-full"
+          className="lg:w-[68%] w-full bg-[#fad4da] rounded-2xl p-6 sm:p-8 shadow-lg flex flex-col justify-between max-w-full"
         >
           <div className="relative">
             <Image
@@ -127,21 +127,24 @@ export default function Projects() {
               height={400}
               className="object-cover w-full max-w-full h-72 sm:h-80 rounded-xl"
             />
-           <a
-            href={selectedProject.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="absolute top-4 right-4 bg-[#7c3aed] p-2 rounded-full shadow-md hover:bg-[#6b21a8] transition"
-            title="View on GitHub"
-          >
-            <FaExternalLinkAlt size={14} />
-          </a>
+           
 
           </div>
+        <div className="flex items-center gap-3 ">
+        <h3 className="text-xl md:text-2xl font-semibold text-[#1E293B]">
+          {selectedProject.title}
+        </h3>
+        <a
+          href={selectedProject.github}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="p-2 rounded-full bg-[#1E293B] transition"
+          title="View on GitHub"
+        >
+          <FaGithub size={14} />
+        </a>
+      </div>
 
-          <h3 className="text-xl md:text-2xl font-semibold mt-6 mb-2 text-[#1E293B]">
-            {selectedProject.title}
-          </h3>
           <p className="text-sm text-[#334155] mb-4 leading-relaxed">
             {selectedProject.description}
           </p>
@@ -160,7 +163,7 @@ export default function Projects() {
 
         {/* Right Panel */}
         <div ref={swiperListRef} className="lg:w-[35%] w-full">
-          <h4 className="text-lg font-semibold mb-4 text-[#38BDF8]">All Projects</h4>
+          <h4 className="text-lg font-semibold mb-4 text-[#FF6B81]">All Projects</h4>
 
           {/* Mobile List */}
           <div className="lg:hidden flex flex-col gap-4">
