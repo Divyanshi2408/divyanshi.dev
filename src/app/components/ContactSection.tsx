@@ -12,6 +12,7 @@ gsap.registerPlugin(ScrollTrigger);
 export default function ContactSection() {
   const sectionRef = useRef(null);
   const formRef = useRef<HTMLFormElement | null>(null);
+  const contactCardRef = useRef<HTMLDivElement | null>(null);
   const infoRef = useRef(null);
 
   useEffect(() => {
@@ -27,20 +28,20 @@ export default function ContactSection() {
         },
       });
 
-      gsap.from(formRef.current, {
+      gsap.from(contactCardRef.current, {
         opacity: 0,
-        xPercent: -30, // Changed from x: -100 to xPercent
+        xPercent: -30,
         duration: 1,
         delay: 0.3,
         scrollTrigger: {
-          trigger: formRef.current,
+          trigger: contactCardRef.current,
           start: 'top 85%',
         },
       });
 
       gsap.from(infoRef.current, {
         opacity: 0,
-        xPercent: 30, // Changed from x: 100 to xPercent
+        xPercent: 30,
         duration: 1,
         delay: 0.3,
         scrollTrigger: {
@@ -58,10 +59,11 @@ export default function ContactSection() {
 
     if (!formRef.current) return;
 
-      emailjs.sendForm(
+    emailjs
+      .sendForm(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
-        formRef.current!,
+        formRef.current,
         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
       )
       .then(() => {
@@ -77,7 +79,6 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-
       className="bg-[#0F172A] text-[#fad4da] px-6 py-16 md:px-20 overflow-x-hidden"
     >
       <div className="text-center mb-12">
@@ -89,19 +90,14 @@ export default function ContactSection() {
       </div>
 
       <div className="grid md:grid-cols-2 gap-8 max-w-full">
-        {/* Left Form */}
-        
-        <div ref={formRef} className="bg-[#fad4da] p-6 rounded-xl shadow-md">
+        {/* Left Form Box */}
+        <div ref={contactCardRef} className="bg-[#fad4da] p-6 rounded-xl shadow-md">
           <h3 className="text-xl text-black font-semibold mb-4">Send a Message</h3>
           <p className="text-sm text-black mb-6">
             Fill out the form below and I will get back to you within 24 hours
           </p>
 
-          <form
-            
-            onSubmit={handleSubmit}
-            className="space-y-5 text-black"
-          >
+          <form ref={formRef} onSubmit={handleSubmit} className="space-y-5 text-black">
             <div>
               <label className="block text-sm mb-1">Full Name</label>
               <input
@@ -146,7 +142,6 @@ export default function ContactSection() {
 
         {/* Right Info Cards */}
         <div ref={infoRef} className="flex flex-col gap-6 max-w-full">
-          {/* Contact Info */}
           <div className="bg-[#fad4da] p-6 rounded-xl shadow-md space-y-4">
             <h3 className="text-lg text-black font-semibold">Contact Information</h3>
             <div className="flex items-center gap-3 text-sm">
@@ -159,7 +154,6 @@ export default function ContactSection() {
             </div>
           </div>
 
-          {/* Follow Me */}
           <div className="bg-[#fad4da] p-6 rounded-xl shadow-md">
             <h3 className="text-lg text-black font-semibold mb-4">Follow Me</h3>
             <div className="flex flex-col gap-3 text-black">
@@ -184,7 +178,6 @@ export default function ContactSection() {
             </div>
           </div>
 
-          {/* Availability */}
           <div className="bg-[#fad4da] p-6 rounded-xl shadow-md">
             <div className="flex items-center gap-2 mb-2">
               <span className="w-3 h-3 bg-green-400 rounded-full"></span>
