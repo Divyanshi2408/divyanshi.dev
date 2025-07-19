@@ -59,7 +59,10 @@ export default function Experience() {
             <div
               key={idx}
               className="mb-10 ml-6 relative"
-              ref={(el) => (cardRefs.current[idx] = el)}
+              ref={(el) => {
+              cardRefs.current[idx] = el;
+            }}
+
             >
               {/* Icon */}
               <div className="absolute -left-[4rem] top-1 w-8 h-8 bg-[#FF6B81] rounded-full flex items-center justify-center shadow-md border-2 border-[#0F172A]">
