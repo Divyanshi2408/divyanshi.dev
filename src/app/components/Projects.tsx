@@ -14,18 +14,18 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
-   {
+  {
     title: "Music Player Web App",
     description:
-      "A dynamic and interactive music player built with React and Last.fm API integration.Trending Songs: Displays the latest and most popular songs based on real-time data or pre-defined lists. New Releases: A section dedicated to the newest music tracks, keeping users up-to-date with fresh content. Weekly Top Songs: Showcases the most-played or highest-rated songs of the week. Popular Artists: Allows users to explore top artists and access their music collections.",
+      "A dynamic and feature-rich music streaming platform built using React and Last.fm API. It includes real-time trending charts, newly released tracks, and weekly top song listings to keep users updated with the latest hits. The app also features a curated 'Popular Artists' section, allowing users to explore artist profiles and access their top tracks. The user interface is optimized for responsiveness, ensuring a smooth and enjoyable listening experience across all devices.",
     image: "/mp.png",
     tags: ["React", "CSS", "LastFm.API"],
-     github: "https://github.com/Divyanshi2408/music-player",
+    github: "https://github.com/Divyanshi2408/music-player",
   },
   {
     title: "ThreadSpire – Community Wisdom Threads",
     description:
-      "A MERN-based community platform where users create, remix, and organize long-form wisdom threads.Create & Organize Threads: Users can write, edit, and group related threads. Social Features: Bookmark, react, remix threads. Follow users and view trending content. Analytics: Thread engagement and activity stats. Collections: Organize threads into custom collections.",
+      "A powerful MERN stack-based social platform designed for long-form knowledge sharing. Users can write, organize, and remix insightful threads, while also engaging socially through bookmarks, reactions, and follows. ThreadSpire supports personalized content through collections, and includes trending threads and analytics dashboards to help users track engagement and performance. The modern UI and scalable backend architecture make it ideal for both individual creators and growing communities.",
     image: "/tsp.jpg",
     tags: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
     github: "https://github.com/Divyanshi2408/ThreadSpire-Community-Wisdom-Threads",
@@ -33,15 +33,15 @@ const projects = [
   {
     title: "Real Estate Web App",
     description:
-      "A full-stack MERN Real Estate application for property listings, user authentication, and real-time search.Property Listings: Users can explore properties for sale or rent. Search Filters: Narrow down listings by location, price, and property type. Authentication: Login/signup feature with JWT. Dashboard: Users can post, edit, and delete their own property listings.",
+      "A robust full-stack real estate platform built with the MERN stack. The application enables users to browse and filter property listings by location, price range, and type. It features secure JWT-based user authentication, allowing users to create accounts, manage property posts, and maintain a personalized dashboard. The admin-friendly dashboard includes create, update, and delete functionality, empowering users to control their listings seamlessly. The UI is fully responsive and intuitive for users of all tech levels.",
     image: "/re.png",
     tags: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
     github: "https://github.com/Divyanshi2408/Real-Estate-webApp",
   },
-   {
+  {
     title: "Learning Management System (LMS)",
     description:
-      "A MERN stack-based LMS platform where users can enroll in courses, track progress, and access learning materials. Course Listing, Enrollment, Admin Dashboard, Payment Integration.Course Listing: Browse and filter courses by category or level. Enrollment & Progress Tracking: Users can enroll, mark lessons as complete, and track their learning journey. Admin Dashboard: Manage courses, users, and analytics. Payment Integration: (Optional) Free or integrated payment feature to purchase courses.",
+      "A comprehensive and scalable LMS built using the MERN stack. The system supports course browsing, student enrollment, and lesson tracking, making it easy for users to manage their learning journey. Administrators have access to an integrated dashboard to create and manage courses, monitor users, and view platform analytics. The project also includes optional payment integration for course enrollment, providing flexibility for both free and paid courses. Designed for scalability, accessibility, and responsiveness.",
     image: "/lms.png",
     tags: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
     github: "https://github.com/Divyanshi2408/Learning-Management-System",
@@ -49,10 +49,10 @@ const projects = [
   {
     title: "Recipe Finder Web App",
     description:
-      "A voice-enabled recipe finder using Speech Recognition API to browse recipes interactively.Search by Category: Users can search for dishes categorized by cuisine, meal type, and other filters for better results. Text Search: A simple and efficient text-based search option to find recipes quickly. Voice Search: Integrated a voice search feature that allows users to find recipes using voice commands for enhanced accessibility and convenience. Responsive Design: Optimized for both desktop and mobile devices, ensuring easy navigation on any screen size.",
+      "An interactive and voice-enabled recipe discovery application utilizing the Speech Recognition API. Users can search for recipes using voice commands or traditional text input, and filter results by cuisine, meal type, and ingredients. The UI is fully responsive, offering a smooth experience across mobile and desktop. It’s designed for accessibility and ease-of-use, making cooking inspiration accessible to users of all ages. The app promotes culinary exploration with intuitive navigation and clean, modern visuals.",
     image: "/rp.png",
     tags: ["React", "CSS", "React Hooks", "Speech Recognition API"],
-     github: "https://github.com/Divyanshi2408/recipe-finder",
+    github: "https://github.com/Divyanshi2408/recipe-finder",
   },
 ];
 
@@ -115,51 +115,55 @@ export default function Projects() {
 
       <div className="flex flex-col lg:flex-row gap-10 overflow-hidden">
         {/* Featured Project Card */}
-        <div
-          ref={cardRef}
-          className="lg:w-[68%] w-full bg-[#fad4da] rounded-2xl p-6 sm:p-8 shadow-lg flex flex-col justify-between max-w-full"
-        >
-          <div className="relative">
-            <Image
-              src={selectedProject.image}
-              alt={`Screenshot of ${selectedProject.title}`}
-              width={700}
-              height={400}
-              className="object-cover w-full max-w-full h-72 sm:h-80 rounded-xl"
-            />
-           
+      <div
+  ref={cardRef}
+  className="w-full max-w-full lg:w-[68%] bg-[#fad4da] rounded-2xl p-4 sm:p-6 md:p-8 shadow-lg flex flex-col gap-4"
+>
+  {/* Image */}
+  <div className="relative">
+    <Image
+      src={selectedProject.image}
+      alt={`Screenshot of ${selectedProject.title}`}
+      width={700}
+      height={400}
+      className="w-full h-52 sm:h-64 md:h-72 lg:h-80 object-cover rounded-xl"
+    />
+  </div>
 
-          </div>
-        <div className="flex items-center gap-3 ">
-        <h3 className="text-xl md:text-2xl font-semibold text-[#1E293B]">
-          {selectedProject.title}
-        </h3>
-        <a
-          href={selectedProject.github}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="p-2 rounded-full bg-[#1E293B] transition"
-          title="View on GitHub"
-        >
-          <FaGithub size={14} />
-        </a>
-      </div>
+  {/* Title + GitHub */}
+  <div className="flex items-center justify-between flex-wrap gap-2">
+    <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-[#1E293B]">
+      {selectedProject.title}
+    </h3>
+    <a
+      href={selectedProject.github}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="p-2 rounded-full bg-[#1E293B] hover:bg-[#0f172a] transition"
+      title="View on GitHub"
+    >
+      <FaGithub size={16} className="text-white" />
+    </a>
+  </div>
 
-          <p className="text-sm text-[#334155] mb-4 leading-relaxed">
-            {selectedProject.description}
-          </p>
+  {/* Description */}
+  <p className="text-sm sm:text-base text-[#334155] leading-relaxed">
+    {selectedProject.description}
+  </p>
 
-          <div className="flex flex-wrap gap-3">
-            {selectedProject.tags.map((tag, index) => (
-              <span
-                key={index}
-                className="bg-[#334155] text-white px-4 py-1 rounded-full text-xs font-medium"
-              >
-                {tag}
-              </span>
-            ))}
-          </div>
-        </div>
+  {/* Tags */}
+  <div className="flex flex-wrap gap-2 sm:gap-3">
+    {selectedProject.tags.map((tag, index) => (
+      <span
+        key={index}
+        className="bg-[#334155] text-white px-3 py-1 rounded-full text-xs sm:text-sm font-medium"
+      >
+        {tag}
+      </span>
+    ))}
+  </div>
+</div>
+
 
         {/* Right Panel */}
         <div ref={swiperListRef} className="lg:w-[35%] w-full">

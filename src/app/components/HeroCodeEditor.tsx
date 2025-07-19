@@ -104,10 +104,10 @@ export default function HeroCodeEditor() {
   learning: <span className="text-[#FF6B81]">&apos;Next.js & TypeScript&apos;</span>,
 </p>
 <p className="ml-4">
-  building: <span className="text-[#FF6B81]">&apos;ThreadSpire App&apos;</span>,
+  building: <span className="text-[#FF6B81]">&apos;full-stack projects&apos;</span>,
 </p>
 <p className="ml-4">
-  availableFor: <span className="text-[#FF6B81]">&apos;Dev Roles&apos;</span>,
+  availableFor: <span className="text-[#FF6B81]">&apos;Developer Roles&apos;</span>,
 </p>
 <p className="ml-4">
   github: <span className="text-[#FF6B81]">&apos;/divyanshipal2408&apos;</span>,
