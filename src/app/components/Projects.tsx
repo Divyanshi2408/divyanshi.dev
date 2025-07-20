@@ -162,11 +162,13 @@ export default function Projects() {
         <div className="flex flex-wrap gap-2 sm:gap-3">
           {selectedProject.tags.map((tag, index) => (
             <span
-              key={index}
-              className="bg-[#334155] text-white px-3 py-1 rounded-full text-xs sm:text-sm font-medium"
-            >
-              {tag}
-            </span>
+          key={index}
+          className="bg-[#334155] text-white px-3 py-1 rounded-full text-xs sm:text-sm font-medium"
+          title={`Technology used: ${tag}`}
+        >
+          {tag}
+        </span>
+
           ))}
         </div>
       </div>
@@ -186,8 +188,9 @@ export default function Projects() {
                   setActiveIndex(index);
                 }}
                 className={`cursor-pointer border rounded-xl overflow-hidden transition-transform hover:scale-105 bg-[#fad4da] ${
-                  selectedProject.title === project.title ? 'ring-2 ring-[#e55a6d]' : ''
-                }`}
+                selectedProject.title === project.title ? 'ring-2 ring-[#e55a6d]' : ''
+              }`}
+
               >
                 <div className="relative w-full h-40 sm:h-44">
                   <Image
@@ -259,7 +262,8 @@ export default function Projects() {
                     setSelectedProject(projects[prev]);
                     setActiveIndex(prev);
                   }}
-                  className="m-2 px-2 font-bold hover:scale-110 transition focus:outline-none text-[#FF6B81] bg-[#FF6B81] hover:bg-[#e55a6d] text-white font-semibold rounded-full shadow-md shadow-[#ff6b8170]"
+                 className="m-2 px-2 font-bold hover:scale-110 transition focus:outline-none bg-[#FF6B81] hover:bg-[#e55a6d] text-white rounded-full shadow-md shadow-[#ff6b8170]"
+
                 >
                   ←
                 </button>
@@ -276,7 +280,8 @@ export default function Projects() {
                     setSelectedProject(projects[next]);
                     setActiveIndex(next);
                   }}
-                  className="m-2 px-2 font-bold hover:scale-110 transition focus:outline-none text-[#FF6B81] bg-[#FF6B81] hover:bg-[#e55a6d] text-white font-semibold rounded-full shadow-md shadow-[#ff6b8170]"
+                  className="m-2 px-2 font-bold hover:scale-110 transition focus:outline-none bg-[#FF6B81] hover:bg-[#e55a6d] text-white rounded-full shadow-md shadow-[#ff6b8170]"
+
                 >
                   →
                 </button>

@@ -96,9 +96,9 @@ export default function ContactSection() {
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-8 max-w-full">
+      <div className="grid md:grid-cols-2 gap-8 max-w-full ">
         {/* Left Form Box */}
-        <div ref={contactCardRef} className="bg-[#fad4da] p-6 rounded-xl shadow-md">
+        <div ref={contactCardRef} className="bg-[#fad4da] p-6 rounded-xl shadow-md ">
           <h3 className="text-xl text-black font-semibold mb-4">Send a Message</h3>
           <p className="text-sm text-black mb-6">
             Fill out the form below and I will get back to you within 24 hours
@@ -186,10 +186,11 @@ export default function ContactSection() {
           </div>
 
           <div className="bg-[#fad4da] p-6 rounded-xl shadow-md  hover:shadow-[0_0_15px_#e55a6d] transition-all duration-300">
-            <div className="flex items-center gap-2 mb-2 ">
-              <span className="w-3 h-3 bg-green-400 rounded-full"></span>
-              <p className="text-sm text-black font-semibold">Available for Projects</p>
-            </div>
+          <div className="flex items-center gap-2 mb-2">
+          <span className="w-3 h-3 bg-green-400 rounded-full"></span>
+          <p className="text-sm text-black font-semibold">Available for Projects</p>
+        </div>
+
             <p className="text-sm text-black">
               I am currently accepting new freelance projects and collaboration opportunities.
               Let&apos;s create something extraordinary together!
