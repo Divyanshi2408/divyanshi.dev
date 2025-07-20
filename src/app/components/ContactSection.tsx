@@ -142,7 +142,7 @@ export default function ContactSection() {
 
         {/* Right Info Cards */}
         <div ref={infoRef} className="flex flex-col gap-6 max-w-full">
-          <div className="bg-[#fad4da] p-6 rounded-xl shadow-md space-y-4">
+          <div className="bg-[#fad4da] p-6 rounded-xl shadow-md space-y-4  hover:shadow-[0_0_15px_#e55a6d] transition-all duration-300">
             <h3 className="text-lg text-black font-semibold">Contact Information</h3>
             <div className="flex items-center gap-3 text-sm">
               <MdEmail className="text-[#FF6B81]" />
@@ -154,8 +154,8 @@ export default function ContactSection() {
             </div>
           </div>
 
-          <div className="bg-[#fad4da] p-6 rounded-xl shadow-md">
-            <h3 className="text-lg text-black font-semibold mb-4">Follow Me</h3>
+          <div className="bg-[#fad4da] p-6 rounded-xl shadow-md  hover:shadow-[0_0_15px_#e55a6d] transition-all duration-300">
+            <h3 className="text-lg text-black font-semibold mb-4 ">Follow Me</h3>
             <div className="flex flex-col gap-3 text-black">
               <a
                 href="https://github.com/Divyanshi2408"
@@ -178,8 +178,8 @@ export default function ContactSection() {
             </div>
           </div>
 
-          <div className="bg-[#fad4da] p-6 rounded-xl shadow-md">
-            <div className="flex items-center gap-2 mb-2">
+          <div className="bg-[#fad4da] p-6 rounded-xl shadow-md  hover:shadow-[0_0_15px_#e55a6d] transition-all duration-300">
+            <div className="flex items-center gap-2 mb-2 ">
               <span className="w-3 h-3 bg-green-400 rounded-full"></span>
               <p className="text-sm text-black font-semibold">Available for Projects</p>
             </div>

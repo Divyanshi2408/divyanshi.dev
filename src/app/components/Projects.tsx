@@ -117,7 +117,7 @@ export default function Projects() {
         {/* Featured Project Card */}
       <div
   ref={cardRef}
-  className="w-full max-w-full lg:w-[68%] bg-[#fad4da] rounded-2xl p-4 sm:p-6 md:p-8 shadow-lg flex flex-col gap-4"
+  className="w-full max-w-full lg:w-[68%] bg-[#fad4da] rounded-2xl p-4 sm:p-6 md:p-8 shadow-lg flex flex-col gap-4 "
 >
   {/* Image */}
   <div className="relative">

@@ -70,8 +70,8 @@ export default function Experience() {
               </div>
 
               {/* Timeline Card */}
-              <div className="bg-[#fad4da] rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
-                <p className="text-sm text-[#6b7280]">{item.date}</p>
+              <div className="bg-[#fad4da] rounded-lg p-6 shadow-md  hover:shadow-[0_0_15px_#e55a6d] transition-all duration-300transition-shadow">
+                <p className="text-sm text-[#6b7280]">{item.date}</p> 
                 <h3 className="text-xl font-semibold text-[#1E293B]">
                   {item.role} @ <span className="text-[#FF6B81]">{item.company}</span>
                 </h3>

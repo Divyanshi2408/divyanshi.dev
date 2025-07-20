@@ -85,7 +85,7 @@ export default function HeroCodeEditor() {
   return (
     <div
       ref={containerRef}
-      className="w-full max-w-sm bg-[#fad4da] rounded-xl shadow-xl px-4 py-5"
+      className="w-full max-w-sm bg-[#fad4da] rounded-xl shadow-xl px-4 py-5  hover:shadow-[0_0_15px_#e55a6d] transition-all duration-300"
     >
       {/* Fake editor header buttons */}
       <div className="flex items-center gap-2 mb-4">
