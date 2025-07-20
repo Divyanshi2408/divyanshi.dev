@@ -82,7 +82,14 @@ export default function ContactSection() {
       className="bg-[#0F172A] text-[#fad4da] px-6 py-16 md:px-20 overflow-x-hidden"
     >
       <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold mb-2">Let&apos;s Connect</h2>
+        {/* <h2 className="text-4xl font-bold mb-2">Let&apos;s Connect</h2> */}
+        <div className="text-center mb-6">
+        <h1 className="text-4xl font-bold bg-gradient-to-r from-[#fad4da] to-[#e55a6d] text-transparent bg-clip-text drop-shadow-[0_1px_4px_rgba(234,90,109,0.4)]">
+          Let&apos;s Connect
+        </h1>
+        <div className="h-1 w-16 bg-[#e55a6d] mx-auto mt-2 rounded"></div>
+      </div>
+
         <p className="text-gray-400">
           Ready to bring your ideas to life? Let&apos;s discuss how we can work together to
           create something amazing.

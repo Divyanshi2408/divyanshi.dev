@@ -47,7 +47,14 @@ export default function Experience() {
 
   return (
     <section id="experience" className="bg-[#0F172A] py-12 px-6 pt-10 md:px-20 text-[#F1F5F9]">
-     <h2 className="text-3xl font-bold text-[#fad4da] mb-2 text-center">Experience</h2>
+     {/* <h2 className="text-3xl font-bold text-[#fad4da] mb-2 text-center">Experience</h2> */}
+     <div className="text-center mb-6">
+      <h1 className="text-4xl font-bold bg-gradient-to-r from-[#fad4da] to-[#e55a6d] text-transparent bg-clip-text drop-shadow-[0_1px_4px_rgba(234,90,109,0.4)]">
+        Experience
+      </h1>
+      <div className="h-1 w-16 bg-[#e55a6d] mx-auto mt-2 rounded"></div>
+    </div>
+
         <p className="text-center text-[#AAB1C2] text-sm md:text-base mb-10 max-w-2xl mx-auto">
         Explore my hands-on journey through impactful roles, real-world projects, and continuous growth in the tech landscape.
         </p>

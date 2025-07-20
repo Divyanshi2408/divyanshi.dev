@@ -48,7 +48,13 @@ export default function About() {
       className="bg-[#0F172A] text-white px-6 md:px-16 pt-10 md:pt-14 pb-16">
       {/* Title */}
       <div className="text-center mb-16 about-card">
-        <h1 className="text-4xl text-[#fad4da] font-bold mb-2">About Me</h1>
+       <div className="text-center mb-6">
+      <h1 className="text-4xl font-bold bg-gradient-to-r from-[#fad4da] to-[#e55a6d] text-transparent bg-clip-text drop-shadow-[0_1px_4px_rgba(234,90,109,0.4)]">
+        About Me
+      </h1>
+      <div className="h-1 w-16 bg-[#e55a6d] mx-auto mt-2 rounded"></div>
+    </div>
+
         <p className="text-gray-400 max-w-xl mx-auto">
           Discover my journey, expertise, and passion for crafting exceptional digital experiences
         </p>

@@ -108,7 +108,14 @@ export default function Projects() {
       id="project"
       className="bg-[#0F172A] text-[#fad4da] px-4 md:px-20 py-16 overflow-x-hidden"
     >
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-2">Featured Projects</h2>
+      {/* <h2 className="text-3xl md:text-4xl font-bold text-center mb-2">Featured Projects</h2> */}
+      <div className="text-center mb-6">
+      <h1 className="text-4xl font-bold bg-gradient-to-r from-[#fad4da] to-[#e55a6d] text-transparent bg-clip-text drop-shadow-[0_1px_4px_rgba(234,90,109,0.4)]">
+        Featured Projects
+      </h1>
+      <div className="h-1 w-16 bg-[#e55a6d] mx-auto mt-2 rounded"></div>
+    </div>
+
       <p className="text-center text-gray-400 mb-10 text-sm md:text-base">
         Explore my latest work and creative solutions
       </p>
@@ -130,39 +137,39 @@ export default function Projects() {
     />
   </div>
 
-  {/* Title + GitHub */}
-  <div className="flex items-center justify-between flex-wrap gap-2">
-    <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-[#1E293B]">
-      {selectedProject.title}
-    </h3>
-    <a
-      href={selectedProject.github}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="p-2 rounded-full bg-[#1E293B] hover:bg-[#0f172a] transition"
-      title="View on GitHub"
-    >
-      <FaGithub size={16} className="text-white" />
-    </a>
-  </div>
-
-  {/* Description */}
-  <p className="text-sm sm:text-base text-[#334155] leading-relaxed">
-    {selectedProject.description}
-  </p>
-
-  {/* Tags */}
-  <div className="flex flex-wrap gap-2 sm:gap-3">
-    {selectedProject.tags.map((tag, index) => (
-      <span
-        key={index}
-        className="bg-[#334155] text-white px-3 py-1 rounded-full text-xs sm:text-sm font-medium"
+    {/* Title + GitHub */}
+    <div className="flex items-center justify-between flex-wrap gap-2">
+      <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-[#1E293B]">
+        {selectedProject.title}
+      </h3>
+      <a
+        href={selectedProject.github}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="p-2 rounded-full bg-[#1E293B] hover:bg-[#0f172a] transition"
+        title="View on GitHub"
       >
-        {tag}
-      </span>
-    ))}
-  </div>
-</div>
+        <FaGithub size={16} className="text-white" />
+      </a>
+    </div>
+
+    {/* Description */}
+    <p className="text-sm sm:text-base text-[#334155] leading-relaxed">
+      {selectedProject.description}
+    </p>
+
+        {/* Tags */}
+        <div className="flex flex-wrap gap-2 sm:gap-3">
+          {selectedProject.tags.map((tag, index) => (
+            <span
+              key={index}
+              className="bg-[#334155] text-white px-3 py-1 rounded-full text-xs sm:text-sm font-medium"
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
+      </div>
 
 
         {/* Right Panel */}
@@ -179,7 +186,7 @@ export default function Projects() {
                   setActiveIndex(index);
                 }}
                 className={`cursor-pointer border rounded-xl overflow-hidden transition-transform hover:scale-105 bg-[#fad4da] ${
-                  selectedProject.title === project.title ? 'ring-2 ring-[#38BDF8]' : ''
+                  selectedProject.title === project.title ? 'ring-2 ring-[#e55a6d]' : ''
                 }`}
               >
                 <div className="relative w-full h-40 sm:h-44">
