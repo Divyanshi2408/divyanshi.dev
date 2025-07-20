@@ -55,7 +55,7 @@ export default function About() {
       <div className="h-1 w-16 bg-[#e55a6d] mx-auto mt-2 rounded"></div>
     </div>
 
-        <p className="text-gray-400 max-w-xl mx-auto">
+        <p className="text-gray-400 max-w-xl mx-auto ">
           Discover my journey, expertise, and passion for crafting exceptional digital experiences
         </p>
       </div>
@@ -65,7 +65,10 @@ export default function About() {
         {/* Tech Stack */}
        <div className="relative rounded-xl p-[2px] bg-[#fad4da]  hover:shadow-[0_0_15px_#e55a6d] transition-all duration-300">
         <div className="bg-[#fad4da] rounded-[0.75rem] p-6">
-          <h2 className="text-xl text-[#1E293B] font-semibold mb-4">Tech Stack</h2>
+      <h2 className="text-xl text-[#1E293B] font-semibold mb-4 hover:text-[#e55a6d] transition-colors duration-200">
+        Tech Stack
+      </h2>
+
           <p className="text-[#334155] text-sm mb-4">
             Constantly shaping ideas into scalable, maintainable digital solutions.
           </p>
@@ -86,7 +89,7 @@ export default function About() {
 
         {/* Experience Highlights */}
         <div className="about-card bg-[#fad4da] rounded-xl p-6 shadow-md  hover:shadow-[0_0_15px_#e55a6d] transition-all duration-300">
-          <h2 className="text-xl text-[#1E293B] font-semibold mb-4">Experience Highlights</h2>
+          <h2 className="text-xl text-[#1E293B] font-semibold mb-4 hover:text-[#e55a6d] transition-colors duration-200">Experience Highlights</h2>
           <p className="text-[#334155] text-sm mb-6">
             Numbers that define my professional journey
           </p>
@@ -111,22 +114,23 @@ export default function About() {
        {/* Global Collaboration */}
       <div className="about-card bg-[#fad4da] rounded-xl p-6 shadow-md  hover:shadow-[0_0_15px_#e55a6d] transition-all duration-300 transition-shadow flex flex-col justify-between">
         <div>
-          <h2 className="text-xl text-[#1E293B] font-semibold mb-4">Global Collaboration</h2>
+          <h2 className="text-xl text-[#1E293B] font-semibold mb-4 hover:text-[#e55a6d] transition-colors duration-200">Global Collaboration</h2>
           <p className="text-[#334155] text-sm">
             Based in India, I work seamlessly with global teams across time zones, delivering scalable full-stack solutions with clear communication and mutual respect.
           </p>
         </div>
-        <a
-          href="#contact"
-          className="mt-6 inline-flex items-center text-center justify-center gap-2 text-[#e55a6d] font-medium border border-[#e55a6d] rounded-lg px-4 py-2 hover:bg-[#e55a6d] hover:text-white transition"
-        >
+       <a
+        href="#contact"
+        className="mt-6 inline-flex items-center text-center justify-center gap-2 text-[#e55a6d] font-medium border border-[#e55a6d] rounded-lg px-4 py-2 hover:bg-[#e55a6d] hover:text-white transition shadow-sm"
+      >
+
           Let&apos;s Connect <FiArrowRight />
         </a>
       </div>
 
       {/* Passion for Innovation */}
-      <div className="about-card bg-[#fad4da] rounded-xl p-6 shadow-md  hover:shadow-[0_0_15px_#e55a6d] transition-all duration-300transition-shadow">
-      <h2 className="text-xl text-[#1E293B] font-semibold mb-4">Driven by Innovation</h2>
+      <div className="about-card bg-[#fad4da] rounded-xl p-6 shadow-md  hover:shadow-[0_0_15px_#e55a6d] transition-all duration-300 transition-shadow">
+      <h2 className="text-xl text-[#1E293B] font-semibold mb-4 hover:text-[#e55a6d] transition-colors duration-200">Driven by Innovation</h2>
       <p className="text-[#334155] text-sm">
         I&apos;m passionate about turning ideas into intuitive, high-impact web experiences. Whether designing pixel-perfect interfaces or building backend APIs, I focus on writing clean, modular, and maintainable code. I believe true innovation lies in simplifying complexity, embracing iteration, and building with empathy. Every project is an opportunity to learn, push boundaries, and create solutions that make a real difference.
       </p>
