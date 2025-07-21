@@ -53,10 +53,7 @@ export default function Home() {
   }, []);
 
   return (
-<main className="bg-[#0F172A] text-[#F1F5F9] relative overflow-hidden">
-
-
-
+     <main className="bg-[#0F172A] text-[#F1F5F9] relative overflow-hidden">
       {/* Header */}
       <header className="hidden lg:flex justify-between items-center px-6 md:px-16 py-6 border-b border-[#1E293B] bg-[#0F172A] shadow-sm">
         <div className="flex items-center gap-4 text-[#AAB1C2]">
@@ -174,10 +171,6 @@ export default function Home() {
           <h2 className="text-4xl md:text-6xl font-bold leading-tight mb-3 text-[#fad4da]">
           Divyanshi<br /> Pal
         </h2>
-
-          {/* <p className="text-sm md:text-base text-[#F9B6C2] mb-2 tracking-wide">
-            FullStack Developer. <br /> Application Developer.
-          </p> */}
           <p className="text-base text-[#f88ea1] font-medium tracking-wide mb-2">
           FullStack Developer · Application Developer
         </p>
@@ -215,7 +208,6 @@ export default function Home() {
         ref={scrollRef}
         className="mt-4 md:mt-10 animate-bounce text-[#FF6B81] text-center text-xl"
       >
-
         ↓ Scroll Down
       </div>
     </main>

@@ -166,18 +166,24 @@ export default function ContactSection() {
             <div className="flex flex-col gap-3 text-black">
               <a
                 href="https://github.com/Divyanshi2408"
+                 target="_blank"
+                 rel="noopener noreferrer"
                 className="flex items-center gap-3 hover:text-[#FF6B81] text-sm"
               >
                 <FaGithub /> GitHub
               </a>
               <a
                 href="#"
+                 target="_blank"
+                 rel="noopener noreferrer"
                 className="flex items-center gap-3 hover:text-[#FF6B81] text-sm"
               >
                 <FaTwitter /> X (Twitter)
               </a>
               <a
                 href="https://www.linkedin.com/in/divyanshi-pal/"
+                 target="_blank"
+                 rel="noopener noreferrer"
                 className="flex items-center gap-3 hover:text-[#FF6B81] text-sm"
               >
                 <FaLinkedin /> LinkedIn

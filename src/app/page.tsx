@@ -14,7 +14,6 @@ export default function Home() {
         <Experience />
         <Projects/>
         <ContactSection />
-    
       </section>
 </main>
   );
