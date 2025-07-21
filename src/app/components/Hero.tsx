@@ -171,8 +171,7 @@ export default function Home() {
 
         {/* Left Text */}
         <div ref={leftTextRef} className="text-center lg:text-left">
-          {/* <h2 className="text-4xl md:text-6xl font-bold leading-tight mb-3 text-[#fad4da]"></h2> */}
-        <h2 className="text-4xl md:text-6xl font-bold leading-tight mb-3 bg-gradient-to-r from-[#fad4da] to-[#e55a6d] text-transparent bg-clip-text drop-shadow-[0_2px_6px_rgba(234,90,109,0.5)]">
+          <h2 className="text-4xl md:text-6xl font-bold leading-tight mb-3 text-[#fad4da]">
           Divyanshi<br /> Pal
         </h2>
 
