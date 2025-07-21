@@ -123,40 +123,40 @@ export default function Projects() {
       <div className="flex flex-col lg:flex-row gap-10 overflow-hidden">
         {/* Featured Project Card */}
       <div
-  ref={cardRef}
-  className="w-full max-w-full lg:w-[68%] bg-[#fad4da] rounded-2xl p-4 sm:p-6 md:p-8 shadow-lg flex flex-col gap-4 "
->
-  {/* Image */}
-  <div className="relative">
-    <Image
-      src={selectedProject.image}
-      alt={`Screenshot of ${selectedProject.title}`}
-      width={700}
-      height={400}
-      className="w-full h-52 sm:h-64 md:h-72 lg:h-80 object-cover rounded-xl"
-    />
-  </div>
+      ref={cardRef}
+      className="w-full max-w-full lg:w-[68%] bg-[#fad4da] rounded-2xl p-4 sm:p-6 md:p-8 shadow-lg flex flex-col gap-4 "
+    >
+      {/* Image */}
+      <div className="relative">
+        <Image
+          src={selectedProject.image}
+          alt={`Screenshot of ${selectedProject.title}`}
+          width={700}
+          height={400}
+          className="w-full h-52 sm:h-64 md:h-72 lg:h-80 object-cover rounded-xl"
+        />
+      </div>
 
-    {/* Title + GitHub */}
-    <div className="flex items-center justify-between flex-wrap gap-2">
-      <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-[#1E293B]">
-        {selectedProject.title}
-      </h3>
-      <a
-        href={selectedProject.github}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="p-2 rounded-full bg-[#1E293B] hover:bg-[#0f172a] transition"
-        title="View on GitHub"
-      >
-        <FaGithub size={16} className="text-white" />
-      </a>
-    </div>
+        {/* Title + GitHub */}
+        <div className="flex items-center justify-between flex-wrap gap-2">
+          <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-[#1E293B]">
+            {selectedProject.title}
+          </h3>
+          <a
+            href={selectedProject.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-2 rounded-full bg-[#1E293B] hover:bg-[#0f172a] transition"
+            title="View on GitHub"
+          >
+            <FaGithub size={16} className="text-white" />
+          </a>
+        </div>
 
-    {/* Description */}
-    <p className="text-sm sm:text-base text-[#334155] leading-relaxed">
-      {selectedProject.description}
-    </p>
+        {/* Description */}
+        <p className="text-sm sm:text-base text-[#334155] leading-relaxed">
+          {selectedProject.description}
+        </p>
 
         {/* Tags */}
         <div className="flex flex-wrap gap-2 sm:gap-3">
@@ -176,7 +176,7 @@ export default function Projects() {
 
         {/* Right Panel */}
         <div ref={swiperListRef} className="lg:w-[35%] w-full">
-          <h4 className="text-lg font-semibold mb-4 text-[#FF6B81]">All Projects</h4>
+          <h4 className="text-lg font-semibold mb-4 text-[#e55a6d]">All Projects</h4>
 
           {/* Mobile List */}
           <div className="lg:hidden flex flex-col gap-4">
@@ -232,7 +232,7 @@ export default function Projects() {
                       swiperRef.current?.slideTo(index);
                     }}
                     className={`cursor-pointer border rounded-xl overflow-hidden transition-transform hover:scale-105 h-full bg-[#FF6B81] ${
-                      selectedProject.title === project.title ? 'ring-2 ring-[#38BDF8]' : ''
+                      selectedProject.title === project.title ? 'ring-2 ring-[#e55a6d]' : ''
                     }`}
                   >
                     <div className="relative w-full h-full">
