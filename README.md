@@ -22,13 +22,17 @@ Welcome to my personal developer portfolio, built using **Next.js**, **TypeScrip
 
 ## 🧩 Features
 
-- ⚡ **Fully responsive layout**
-- 🌐 **SEO optimized**
-- 🧭 **File-based routing with smooth navigation**
-- 🎨 **Beautiful UI with Tailwind and GSAP animations**
-- 💡 **Projects, Skills, Timeline, and Contact sections**
-- 📱 **Mobile-first design**
+- **Fully responsive layout**
+- **SEO optimized**
+- **File-based routing with smooth navigation**
+- **Beautiful UI with Tailwind and GSAP animations**
+- **Projects, Skills, Timeline, and Contact sections**
+- **Mobile-first design**
 
 ---
+## 📣 Get in Touch
+Feel free to explore my portfolio and connect with me for any feedback, collaboration, or opportunities.
 
+- **LinkedIn**: [(https://www.linkedin.com/in/divyanshi-pal/)]
+- **Email**: [divyanshipal2808@gmail.com]
 
